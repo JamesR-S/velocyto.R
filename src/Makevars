@@ -1,4 +1,7 @@
 CXX_STD = CXX11
+
+PKG_CPPFLAGS = -DR_NO_REMAP
+
 PKG_CXXFLAGS= $(SHLIB_OPENMP_CXXFLAGS)
 PKG_CFLAGS=$(SHLIB_OPENMP_CFLAGS)
 PKG_LIBS=-lboost_filesystem -lboost_system  -lstdc++ -L /opt/homebrew/Cellar/boost/1.89.0_1/lib/
